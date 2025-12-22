@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class  MainActivity extends AppCompatActivity {
     Button but;
-    int counter=0;
+    int counter=1;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +28,9 @@ public class  MainActivity extends AppCompatActivity {
 
 
     public void go(View view) {
-        if (counter==6) {
-            but.setText("Enough to click. Go to new start!");
-            counter = 0;
+        if (counter%7==0) {
+            but.setText("BOOM !");
+            counter = counter + 1;
         }
         else {
             but.setText("This is a click number:" + counter);
