@@ -12,7 +12,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class  MainActivity extends AppCompatActivity {
     Button but;
+    int counter=0;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -26,9 +28,9 @@ public class  MainActivity extends AppCompatActivity {
 
 
     public void go(View view) {
-    but.setText("Oh, yea, I’ve been clicked!");
 
+        counter=counter+1;
 
-
+        but.setText("This is a click number:" + counter );
     }
 }
