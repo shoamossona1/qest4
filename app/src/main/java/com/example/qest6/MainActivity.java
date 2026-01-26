@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         counter = counter + 1;
 
 
-        if (counter == 6) {
-            Tv.setText("Enough to click. Go to new start!");
-            counter = 0;
+        if (counter % 7==0) {
+            Tv.setText("BOOM !");
+
         } else {
             Tv.setText("This is a click number:" + counter);
 
