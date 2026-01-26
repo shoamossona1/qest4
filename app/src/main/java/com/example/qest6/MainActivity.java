@@ -17,6 +17,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    int counter=1;
     TextView Tv;
 
     @Override
@@ -34,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void go(View view) {
-        Tv.setText("Oh, yea, I’ve been clicked!");
-
+        Tv.setText("This is click number" +" " + counter);
+        counter=counter+1;
         }
 
 
