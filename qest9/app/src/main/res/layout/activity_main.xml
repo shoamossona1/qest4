@@ -27,10 +27,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="120dp"
         android:text="click me"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Et" />
+        app:layout_constraintTop_toBottomOf="@+id/Edit_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
