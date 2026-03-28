@@ -31,9 +31,30 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
+            public void onClick(View v) {
+                if (sW.isChecked()) {
+                    on = 1;
+                } else {
+                    on = 0;
+                }
 
+                if (tB.isChecked()) {
+                    of = 1;
+                } else {
+                    of = 0;
+                }
+
+                if (on == 1 && of == 1) {
+                    findViewById(android.R.id.content).setBackgroundColor(
+                            android.graphics.Color.parseColor("#FC0000"));
+                }
+                else if (on == 1 && of == 0) {
+                    findViewById(android.R.id.content).setBackgroundColor(
+                            android.graphics.Color.parseColor("#00FC00"));
                 }
             }
         });
     }
 }
+
+
