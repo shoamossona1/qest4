@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         sW = findViewById(R.id.Switch1);
         tB = findViewById(R.id.ToggleButton);
         btn = findViewById(R.id.Button);
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,9 +51,15 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(android.R.id.content).setBackgroundColor(
                             android.graphics.Color.parseColor("#00FC00"));
                 }
+                else if (on == 0 && of == 1) {
+                    findViewById(android.R.id.content).setBackgroundColor(
+                            android.graphics.Color.parseColor("#0000FC"));
+                }
+                else {
+                    findViewById(android.R.id.content).setBackgroundColor(
+                            android.graphics.Color.parseColor("#9600FF"));
+                }
             }
         });
     }
 }
-
-
