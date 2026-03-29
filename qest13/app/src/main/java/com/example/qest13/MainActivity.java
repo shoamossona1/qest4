@@ -46,7 +46,21 @@ public class MainActivity extends AppCompatActivity {
     public void changeBackground(int checkedId) {
         if (checkedId == R.id.rb1) {
             findViewById(android.R.id.content).setBackgroundColor(
-                    android.graphics.Color.parseColor("#FC0000"));
-
+                    android.graphics.Color.parseColor("#FC0000")); // אדום
+        }
+        else if (checkedId == R.id.rb2) {
+            findViewById(android.R.id.content).setBackgroundColor(
+                    android.graphics.Color.parseColor("#00FC00")); // ירוק
+        }
+        else if (checkedId == R.id.rb3) {
+            findViewById(android.R.id.content).setBackgroundColor(
+                    android.graphics.Color.parseColor("#0000FC")); // כחול
+        }
+        else if (checkedId == R.id.rb4) {
+            findViewById(android.R.id.content).setBackgroundColor(
+                    android.graphics.Color.parseColor("#9600FF")); // סגול
+        }
     }
 }
+
+
