@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Switch sw;
     RadioGroup rg;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    /**
+     * Changes the background color of the screen according to the checked RadioButton.
+     * There are 4 possible background colors:
+     * rb1 - Red, rb2 - Green, rb3 - Blue, rb4 - Purple.
+     */
 
     public void change(View view) {
         if (!sw.isChecked()) {
